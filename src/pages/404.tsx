@@ -1,6 +1,6 @@
+import Loader from '@/common/Loader';
 import { useRouter } from 'next/dist/client/router';
 import { useEffect } from 'react';
-import { Loader } from '../common/Loader';
 
 const NotFound = () => {
   const router = useRouter();
@@ -9,7 +9,7 @@ const NotFound = () => {
     router.push('/');
   }, [router]);
 
-  return <></>;
+  return <Loader />;
 };
 
 export default NotFound;
