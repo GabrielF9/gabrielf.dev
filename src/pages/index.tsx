@@ -1,16 +1,34 @@
 import Head from 'next/head';
+import Footer from '@/common/Footer';
+import { Home } from '../layout/home';
+import { useEffect, useState } from 'react';
+import Loader from '@/common/Loader';
 
-export default function Home() {
+const HomePage = () => {
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    setTimeout(() => {
+      setLoading(false);
+    }, 3000);
+  }, []);
+
   return (
-    <div>
+    <>
       <Head>
-        <title>Next Boilerplate</title>
-        <meta
-          name="description"
-          content="Next App boilerplate, typescript + eslint + prettier + editorconfig"
-        />
-        <link rel="icon" href="/favicon.ico" />
+        <title>Gabriel Ferreira</title>
       </Head>
-    </div>
+
+      {loading ? (
+        <Loader />
+      ) : (
+        <>
+          <Home />
+          <Footer />
+        </>
+      )}
+    </>
   );
-}
+};
+
+export default HomePage;
