@@ -1,23 +1,34 @@
 import styled from 'styled-components';
 
-export const Container = styled.div`
-  background-color: ${({ theme }) => theme.color.black};
-  border-top: 1px solid ${({ theme }) => theme.color.grey};
-  padding: 36px 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-`;
+interface CopyProps {
+  hideOnMobile?: boolean;
+  showOnMobile?: boolean;
+}
 
-export const Copy = styled.p`
+export const Copy = styled.p<CopyProps>`
+  font-family: 'Lora', serif;
+  font-style: italic;
+
+  color: ${({ theme }) => theme.color.white};
+
   font-size: 1rem;
   text-align: center;
-  font-style: italic;
-  color: ${({ theme }) => theme.color.grey};
-  margin-top: 16px;
+  margin-bottom: 12px;
 
-  @media screen and (min-width: ${({ theme }) => theme.breakpoints.lg}) {
-    font-size: 1em;
+  display: ${props =>
+    props.showOnMobile ? 'block' : props.hideOnMobile ? 'none' : 'block'};
+
+  @media screen and (min-width: ${({ theme }) => theme.breakpoints.md}) {
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    margin-right: 12px;
+    margin-bottom: 0;
+    display: ${props =>
+      props.showOnMobile ? 'none' : props.hideOnMobile ? 'block' : 'none'};
   }
 `;
+
+Copy.defaultProps = {
+  hideOnMobile: false,
+  showOnMobile: false,
+};

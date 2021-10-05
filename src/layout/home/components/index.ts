@@ -1,3 +1,3 @@
-import { ComingSoon } from './ComingSoon';
+import { GlassyCard } from './GlassyCard';
 
-export { ComingSoon };
+export { GlassyCard };

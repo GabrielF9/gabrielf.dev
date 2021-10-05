@@ -1,5 +1,4 @@
 import Head from 'next/head';
-import Footer from '@/common/Footer';
 import { Home } from '../layout/home';
 import { useEffect, useState } from 'react';
 import Loader from '@/common/Loader';
@@ -24,7 +23,6 @@ const HomePage = () => {
       ) : (
         <>
           <Home />
-          <Footer />
         </>
       )}
     </>

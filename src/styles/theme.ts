@@ -5,13 +5,19 @@ export const defaultTheme: DefaultTheme = {
     sm: '576px',
     md: '768px',
     lg: '992px',
-    xl: '1200px',
+    xl: '1024px',
     xxl: '1400px',
   },
   color: {
     white: '#FFFFFF',
+    mainPrimary: '#28313B',
+    mainSecondary: '#485461',
     black: '#212121',
     grey: '#777777',
+    blue: '#1F86F9',
+  },
+  gradient: {
+    background: 'linear-gradient(302.28deg, #28313B 24.64%, #485461 76.42%)',
   },
 };
 

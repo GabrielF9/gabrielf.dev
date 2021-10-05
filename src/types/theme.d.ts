@@ -9,13 +9,21 @@ interface Breakpoints {
 
 interface ColorPallete {
   white: string;
+  mainPrimary: string;
+  mainSecondary: string;
   grey: string;
   black: string;
+  blue: string;
+}
+
+interface Gradients {
+  background: string;
 }
 
 declare module 'styled-components' {
   export interface DefaultTheme {
     breakpoints: BreakPoints;
     color: ColorPallete;
+    gradient: Gradients;
   }
 }

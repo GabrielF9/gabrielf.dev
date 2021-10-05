@@ -11,7 +11,7 @@ export const GlobalStyles = createGlobalStyle`
   }
 
   body {
-    font-family: 'Lora', serif;
+    font-family: 'Roboto', sans-serif;
     max-width: 100vw;
     overflow-x: hidden;
 
@@ -27,19 +27,5 @@ export const GlobalStyles = createGlobalStyle`
   a {
     text-decoration: none;
     cursor: pointer;
-  }
-
-  ::-webkit-scrollbar {
-    width: 6px;
-    height: 6px;
-  }
-
-  ::-webkit-scrollbar-track {
-    background: ${({ theme }) => theme.color.black};
-  }
-
-  ::-webkit-scrollbar-thumb {
-    background: ${({ theme }) => theme.color.grey};
-    border-radius: 3px;
   }
 `;

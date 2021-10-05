@@ -1,17 +1,15 @@
-import { Copy, Container } from './styles';
-import Image from 'next/image';
+import { Copy } from './styles';
 
-const Footer = () => {
+type FooterProps = {
+  hideOnMobile?: boolean;
+  showOnMobile?: boolean;
+};
+
+const Footer = ({ hideOnMobile, showOnMobile }: FooterProps) => {
   return (
-    <Container>
-      <Image
-        src="/assets/logo.png"
-        width={50}
-        height={50}
-        alt={`Set of rectangles that forms a monogram for Gabriel Ferreira.`}
-      />
-      <Copy>Gabriel Ferreira © 2021</Copy>
-    </Container>
+    <Copy hideOnMobile={hideOnMobile} showOnMobile={showOnMobile}>
+      Gabriel Ferreira © 2021
+    </Copy>
   );
 };
 

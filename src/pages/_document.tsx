@@ -48,11 +48,11 @@ export default class MyDocument extends Document {
             crossOrigin="anonymous"
           />
           <link
-            href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap"
+            href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap"
             rel="stylesheet"
           />
           <link
-            href="https://fonts.googleapis.com/css2?family=Lora:ital@0;1&display=swap"
+            href="https://fonts.googleapis.com/css2?family=Lora:ital@1&display=swap"
             rel="stylesheet"
           />
           <link rel="shortcut icon" href="favicon.png" type="image/png" />

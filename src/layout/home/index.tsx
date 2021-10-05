@@ -1,11 +1,14 @@
 import { Container } from './styles';
-import { ComingSoon } from './components';
+import { GlassyCard } from './components';
+import Footer from '@/common/Footer';
 
 export const Home = () => {
   return (
     <>
       <Container>
-        <ComingSoon />
+        <div />
+        <GlassyCard />
+        <Footer hideOnMobile />
       </Container>
     </>
   );
