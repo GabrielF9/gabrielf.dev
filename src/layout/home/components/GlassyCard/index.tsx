@@ -31,7 +31,7 @@ export const GlassyCard = () => {
       <CardHeader>
         <ProfileImage src="/assets/profile.jpeg" alt="Gabriel Ferreira" />
         <CardHeaderText>
-          <CardTitle>Hi, I’m Gab 👋</CardTitle>
+          <CardTitle>Hi, I’m Gabriel 👋</CardTitle>
           <CardSubtitle>The only way is up ✨</CardSubtitle>
         </CardHeaderText>
       </CardHeader>
