@@ -22,7 +22,7 @@ const actions = [
   { url: 'https://www.linkedin.com/in/gabrielf-dev/', image: <LinkedIn /> },
   { url: 'https://twitter.com/gabrielf_dev', image: <Twitter /> },
   { url: 'https://www.instagram.com/gabrielf.dev/', image: <Instagram /> },
-  { url: 'https://dribbble.com/gabrielf-dev', image: <Dribbble /> },
+  // { url: 'https://dribbble.com/gabrielf-dev', image: <Dribbble /> },
 ];
 
 export const GlassyCard = () => {
