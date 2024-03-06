@@ -1,4 +1,10 @@
 import Head from 'next/head';
+import styled from 'styled-components';
+
+const IframeContainer = styled.div`
+  width: 500px;
+  height: 500px;
+`;
 
 const HomePage = () => {
   return (
@@ -29,6 +35,14 @@ const HomePage = () => {
         };`,
         }}
       ></script>
+
+      <IframeContainer>
+        <iframe
+          src="https://s1.gabrielf.dev"
+          width="100%"
+          height="100%"
+        ></iframe>
+      </IframeContainer>
     </>
   );
 };

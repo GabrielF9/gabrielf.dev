@@ -25,7 +25,8 @@
       "@/common": [
         "src/common"
       ]
-    }
+    },
+    "incremental": true
   },
   "include": [
     "next-env.d.ts",
