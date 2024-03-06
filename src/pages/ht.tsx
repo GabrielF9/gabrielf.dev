@@ -38,7 +38,7 @@ const HomePage = () => {
 
       <IframeContainer>
         <iframe
-          src="https://s1.gabrielf.dev"
+          src="https://s2.s1.gabrielf.dev"
           width="100%"
           height="100%"
         ></iframe>
